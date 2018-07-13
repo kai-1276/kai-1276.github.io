@@ -1,0 +1,43 @@
+body{
+  margin-right: 200px;
+  margin-left: 200px;
+  border-style: none double;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #EEEEEE;
+}
+figure.image-box{
+  float: left;
+  padding-right: 20px;
+}
+.clear{
+  clear:both;
+}
+h1{
+  text-align: center;
+  font-size: 280%;
+  font-weight: bold;
+}
+p{
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.lead::first-letter{
+  float:left;
+  padding:0.05em 0.05em 0 0;
+  line-height: 0.95em;
+  font-size: 4.1em;
+  font-weight: bold;
+}
+:target{
+  background: #94b5d4;
+}
+a:link{
+  color: #94b5d4;
+}
+a:visited{
+  color: #544a17;
+}
+a:hover{
+  opacity: 0.75;
+}
