@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body{
   margin-right: 200px;
   margin-left: 200px;
@@ -42,8 +43,12 @@ a:visited{
 a:hover{
   opacity: 0.75;
 }
-
+.image box{
+  background: url(http://sozai.7gates.net/img/icon/loading/loading01_r3_c1.gif) center center no-repeat;
+}
+/*パンくずリストここから*/
 .breadcrump{
   list-style: none;
 
 }
+/*パンくずリストここまで*/
