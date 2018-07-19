@@ -1,13 +1,56 @@
 @charset "UTF-8";
 
 body{
-  margin-right: 200px;
-  margin-left: 200px;
-  border-style: none double;
-  padding-right: 20px;
-  padding-left: 20px;
   background-color: #EEEEEE;
 }
+
+header{
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.logo{
+  margin: 50px auto;
+  width: 263px;
+  height: 59px;
+  background: url(image/2018xtech_logotype_s.png);
+  font-size: 0;
+}
+
+.header-nav-wrapper{
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #EEEEEE;
+}
+
+/*flex2カラムレイアウトここから*/
+.container{
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  padding: 0 0 40px 0;
+  background: #ffffff
+}
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  padding: 50px 20px;
+  background: #ffffff
+
+}
+
+.maincontents{
+  margin-left: 270px;
+  padding: 20px;
+}
+
+/*flex2カラムレイアウトここまで*/
+
 figure.image-box{
   float: left;
   padding-right: 20px;
