@@ -37,11 +37,11 @@ header{
 
 .sidebar{
   position: fixed;
-  width: 250px;
+  width: 230px;
   height: 100%;
   padding: 50px 20px;
-  background: #ffffff
-
+  background: #ffffff;
+  border-right: double #808080;
 }
 
 .maincontents{
