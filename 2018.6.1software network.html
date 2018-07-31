@@ -21,15 +21,15 @@
   <body>
 
     <div class="header-nav-wrapper">
+
       <header>
-        <h1 class="logo">X-tech</h1>
         <nav>
           <ul>
             <li><a href="about me.html">about me-自己紹介</a></li>
             <li><a href="software network.html">software network-ソフトウェア・ネットワーク演習</a></li>
             <li><a href="material.html">material-材料学演習</a></li>
             <li><a href="golden week.html">golden week-ゴールデンウィーク</a></li>
-            <li class="students"><a href="https://shira-ko.github.io/students2018/index.html">students-在学生一覧</a></li>
+            <li class="top"><a href="home.html">top page-トップページ</a></li>
           </ul>
         </nav>
       </header>
@@ -40,7 +40,7 @@
 
       <div class="sidebar">
 
-        <p style="margin-bottom:10em"></p>
+        <p style="margin-bottom:4em"></p>
 
         <ul>
           <li><a href="#a">&quotアレ&quotを習うらしい…</a></li>
@@ -56,7 +56,7 @@
 
       <div class="maincontents">
 
-        <p style="margin-bottom:10em"></p>
+        <p style="margin-bottom:4em"></p>
 
         <h3 id="a">&quotアレ&quotを習うらしい…</h3>
         <p class="lead">
@@ -272,6 +272,20 @@
       </div>
     </div>
 
+    <script type="text/javascript">
+
+    $(function () {
+      var headerHight = 100; //ヘッダの高さ
+      $('a[href^=#]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+        $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+      });
+    });
+
+    </script>
   </body>
 
 </html>

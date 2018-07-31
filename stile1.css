@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   margin: 0;
 }
 
@@ -31,7 +31,7 @@ nav li a:hover{
   border-radius: 10px 10px 0 0;
 }
 
-nav li.students{
+nav li.top{
   margin-left: auto;
 }
 
@@ -49,7 +49,7 @@ nav li.students{
   left: 0;
   top: 0;
   width: 100%;
-  background: #EEEEEE;
+  background: #000000;
 }
 
 /*flex2カラムレイアウトここから*/
