@@ -276,8 +276,8 @@
     <script type="text/javascript">
 
     $(function () {
-      var headerHight = 100; //ヘッダの高さ
-      $('a[href^=#]').click(function(){
+    var headerHight = 100; //ヘッダの高さ
+    $('a[href^=#]').click(function(){
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
         var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
@@ -287,6 +287,7 @@
     });
 
     </script>
+    
   </body>
 
 </html>
