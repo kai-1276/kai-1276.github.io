@@ -272,22 +272,22 @@
       </div>
     </div>
 
-    <script type="text/javascript"src="jquery-3.3.1.js"></script>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
 
     $(function () {
-    var headerHight = 100; //ヘッダの高さ
+    var headerHight = 100;
     $('a[href^=#]').click(function(){
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+        var position = target.offset().top-headerHight;
         $("html, body").animate({scrollTop:position}, 550, "swing");
         return false;
       });
     });
 
     </script>
-    
+
   </body>
 
 </html>
