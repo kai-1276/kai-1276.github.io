@@ -34,3 +34,84 @@
   </body>
 
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>タイトル</title>
+    <link rel="stylesheet" href="stile1.css">
+
+    <style media="screen">
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="header-nav-wrapper">
+
+      <header>
+        <nav>
+          <ul>
+            <li class="top"><a href="index.html">top page-トップページ</a></li>
+            <li><a href="software network.html">software network-ソフトウェア・ネットワーク演習</a></li>
+            <li><a href="material.html">material-材料学演習</a></li>
+            <li><a href="etc.html">etc-その他レポート</a></li></li>
+            <li class="students"><a href="https://shira-ko.github.io/students2018/index.html">students-在学生一覧</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+
+    <div class="container">
+
+      <div class="sidebar">
+
+        <p style="margin-bottom:4em"></p>
+
+        <iframe src="x-tech.html" width="230" height="400"></iframe>
+
+      </div>
+
+
+
+      <div class="maincontents">
+
+        <p style="margin-bottom:4em"></p>
+
+
+
+        <hr>
+
+
+      </div>
+    </div>
+
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+    var headerHight = 100;
+    $('a[href^=#]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight;
+        $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+      });
+    });
+
+    </script>
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>タイトル</title>
+    <link rel="stylesheet" href="stile1.css">
+    <style media="screen">
+
+    </style>
+    <style media="screen">
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="header-nav-wrapper">
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="about me.html">about me-自己紹介</a></li>
+            <li><a href="software network.html">software network-ソフトウェア・ネットワーク演習</a></li>
+            <li><a href="material.html">material-材料学演習</a></li>
+            <li><a href="golden week.html">golden week-ゴールデンウィーク</a></li>
+            <li class="top"><a href="home.html">top page-トップページ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+
+    <div class="container">
+
+      <div class="sidebar">
+
+        <p style="margin-bottom:4em"></p>
+
+        <ul>
+          <li><a href="#a">a題</a></li>
+          <li><a href="#b">b題</a></li>
+          <li><a href="#c">c題</a></li>
+          <li><a href="#d">d題</a></li>
+          <li><a href="#e">e題</a></li>
+          <li><a href="#f">f題</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="maincontents">
+
+        <p style="margin-bottom:4em"></p>
+
+        <h3 id="a">a題</h3>
+
+        <p class="lead">
+        </p>
+
+        <hr>
+
+        <h3 id="b">b題</h3>
+
+        <p>
+       </p>
+
+       <hr>
+
+       <h3 id="c">c題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="d">d題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="e">e題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="f">f題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+      </div>
+    </div>
+
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+    var headerHight = 100;
+    $('a[href^=#]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight;
+        $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+      });
+    });
+
+    </script>
+
+    </script>
+
+  </body>
+
+</html>
