@@ -2,12 +2,12 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>material</title>
-    <link rel="stylesheet" type="text/css" href="stile1.css">
+    <title>material1</title>
+    <link rel="stylesheet" href="stile1.css">
+
     <style media="screen">
 
     </style>
-
   </head>
 
   <body>
@@ -15,12 +15,15 @@
     <div class="header-nav-wrapper">
 
       <header>
+
+        <a href="https://www.kyoto-art.ac.jp/art/department/infodesign/x-techdesign/"><h1 class="logo">X-tech</h1></a>
+
         <nav>
           <ul>
             <li class="top"><a href="index.html">top page-トップページ</a></li>
-            <li><a href="software network.html">software network-ソフトウェア・ネットワーク演習</a></li>
-            <li><a href="material.html">material-材料学演習</a></li>
-            <li><a href="etc.html">etc-その他レポート</a></li></li>
+            <li><a href="software network.html">network1-ソフトウェア・ネットワーク演習</a></li>
+            <li><a href="material.html" class="current">material1-素材・材料学演習</a></li>
+            <li><a href="etc.html">etc-その他レポート等</a></li></li>
             <li class="students"><a href="https://shira-ko.github.io/students2018/index.html">students-在学生一覧</a></li>
           </ul>
         </nav>
@@ -28,17 +31,49 @@
 
     </div>
 
-    <p style="margin-bottom:4em"></p>
+    <div class="container">
 
-      <h1>material（素材・材料学演習）の授業内容</h1>
+      <div class="sidebar">
 
-    <hr>
+        <p style="margin-bottom:4em"></p>
 
-    <a href="https://shira-ko.github.io/material1/index.html">授業日程</a>
-    <br>
-      2018/5/11<li><a href="2018.5.11material.html">ウルトラファクトリーに向けて---工作練習</a></li>
-      2018/6/15<li><a href="2018.6.15material.html">デジタルファブリケーションに触れる</a></li>
-      2018/6/20<li><a href="2018.6.20material.html">計測と3D_CAD</a></li>
+        <iframe src="x-tech.html" width="230" height="400"></iframe>
+
+      </div>
+
+
+
+      <div class="maincontents">
+
+        <p style="margin-bottom:4em"></p>
+
+        <a href="https://shira-ko.github.io/material1/index.html">授業日程</a>
+        <br>
+        2018/5/11<li><a href="2018.5.11material.html">ウルトラファクトリーに向けて---工作練習</a></li>
+        2018/6/15<li><a href="2018.6.15material.html">デジタルファブリケーションに触れる</a></li>
+        2018/6/20<li><a href="2018.6.20material.html">計測と3D_CAD</a></li>
+
+      </div>
+    </div>
+
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+    var headerHight = 100;
+    $('a[href^=#]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight;
+        $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+      });
+    });
+
+    </script>
+
+    </script>
+
   </body>
 
 </html>
