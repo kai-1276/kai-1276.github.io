@@ -55,6 +55,32 @@ nav li.students{
 
 
 
+main{}
+.main-container{
+  z-index: 0;
+  display: flex;
+  padding: 70px 0 30px 0;
+}
+.sidebar{
+  order: 2;
+  flex: 0 0 300px;
+  height: 100%;
+  margin: 0 20px 0 0;
+  padding: 0 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+}
+}
+.maincontents{
+  order: 1;
+  flex: 1 1 auto;
+  margin: 0 20px;
+  padding:0 20px;
+}
+
+
+
 footer{}
 .footer-container{
   position: fixed;
@@ -87,7 +113,7 @@ footer{}
   margin-left: auto;
 }
 .breadcrump li:first-child::after{
-  content: " ";
+  content: "&#8811;";
   color: #00ffff;
 }
 .breadcrump li:last-child::after{
@@ -95,29 +121,6 @@ footer{}
 }
 
 
-
-main{}
-/*flex2カラムレイアウトここから*/
-.main-container{
-  position: static;
-  z-index: 0;
-  display: flex;
-  padding: 70px 0 30px 0;
-}
-.sidebar{
-
-}
-.sidebar2{
-
-}
-.maincontents{
-  order: 2;
-  flex: 1 1 auto;
-  width: 100%;
-  padding:0 20px ;
-}
-
-/*flex2カラムレイアウトここまで*/
 
 figure.image-box{
   float: left;
