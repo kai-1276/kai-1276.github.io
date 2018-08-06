@@ -59,24 +59,41 @@ main{}
 .main-container{
   z-index: 0;
   display: flex;
-  padding: 70px 0 30px 0;
+  margin: 0 20px;
+  padding: 40px 0 30px 0;
 }
 .sidebar{
   order: 2;
-  flex: 0 0 300px;
+  flex: 0 0 240px;
   height: 100%;
-  margin: 0 20px 0 0;
+  margin: 0 5px 0 20px;
   padding: 0 20px;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: 210px;
 }
 }
 .maincontents{
   order: 1;
   flex: 1 1 auto;
-  margin: 0 20px;
+  margin: 0 5px 0 0;
   padding:0 20px;
+}
+
+.links{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.links li{
+  flex: 0 0 19%;
+  margin-bottom: 10px;
+}
+.links li:empty{
+  border: none;
 }
 
 
@@ -113,11 +130,45 @@ footer{}
   margin-left: auto;
 }
 .breadcrump li:first-child::after{
-  content: "&#8811;";
+  content: "→";
   color: #00ffff;
 }
 .breadcrump li:last-child::after{
   content: none;
+}
+
+
+
+.linkbox{
+  width: 280px;
+  height: 300px;
+  background: #ffffff;
+  border: 1px solid #00ffff;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 4px 2px 6px 1px #c0c0c0;
+}
+
+.linkimg{
+  vertical-align: middle;
+  z-index: 0;
+  margin: 1px 0 0 1px;
+}
+
+a:hover img{
+  filter: blur(1px) sepia(80%);
+  z-index: 1;
+}
+
+.linktxt{
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #000000;
+}
+.linktxt::first-line{
+  font-size: 13px;
+  color:#696969;
 }
 
 
@@ -148,6 +199,10 @@ p{
   background: #0000ff;
 }
 
+a{
+  text-decoration: none;
+}
+
 a:link{
   color: #00a1e9;
 }
@@ -158,8 +213,9 @@ a:visited{
 
 a:hover{
   opacity: 0.75;
+  text-decoration: underline;
 }
 
-.image box{
-  background: url(http://sozai.7gates.net/img/icon/loading/loading01_r3_c1.gif) center center no-repeat;
+::selection{
+  background-color: #00ffff;
 }

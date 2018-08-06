@@ -118,6 +118,15 @@ footer{}
 
 
 
+.linkbox{
+  width: 330px;
+  height: 250px;
+  background: #000000;
+  border: 3px solid #00ffff;
+}
+
+
+
 figure.image-box{
   float: left;
   padding-right: 20px;
@@ -154,8 +163,4 @@ a:visited{
 
 a:hover{
   opacity: 0.75;
-}
-
-::selection{
-  background-color: #00ffff;
 }
