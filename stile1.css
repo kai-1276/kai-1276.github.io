@@ -46,7 +46,7 @@ main{}
 .main-container{
   z-index: 0;
   display: flex;
-  padding: 70px 5px 30px 5px;
+  padding: 70px 15px 30px 15px;
 }
 
 .sidebar{
@@ -54,6 +54,7 @@ main{}
   position: fixed;
   flex: 0 0 180px;
   height: 100%;
+  margin: 0;
   padding: 0;
 }
 
@@ -128,8 +129,9 @@ figure.image-box{
 }
 
 p{
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 30px;
+  max-width: 640px;
 }
 
 .lead::first-letter{
